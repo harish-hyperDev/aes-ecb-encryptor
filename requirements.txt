@@ -1,2 +1,0 @@
-pycryptodome==3.16.0	# for encryption
-pyperclip==1.8.2	# for copying the decrypted string to clipboard
