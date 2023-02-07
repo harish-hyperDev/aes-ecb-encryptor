@@ -13,10 +13,13 @@ cipher = AES.new(key, AES.MODE_ECB)
 msg = cipher.encrypt(pad(input_msg, BLOCK_SIZE))
 bmsg = base64.b64encode(msg)
 
-print("Encrypted String: "+bmsg.decode())
+# print("Encrypted String: "+bmsg.decode())
 clip.copy(bmsg.decode())
-
-print("---Encrypted String is copied to your clipboard---");
+print("--------------------------------------------------")
+print("|                                                |")
+print("|  Encrypted String is copied to your clipboard  |")
+print("|                                                |")
+print("--------------------------------------------------")
 #decipher = AES.new(key, AES.MODE_ECB)
 #msg_dec = decipher.decrypt(msg)
 #print(unpad(msg_dec, BLOCK_SIZE).decode())
